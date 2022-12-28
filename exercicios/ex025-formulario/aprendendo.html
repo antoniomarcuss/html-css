@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:  rgba(22, 27, 77, 0.888);
+        }
+        h1 {
+            text-align:center;
+            margin: auto;
+            color: white;
+            padding: 25px;
+
+        }
+        main{
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 40px;
+            box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.555);
+            
+        }
+     
+        table{
+            border-collapse: collapse;
+            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.683);
+            max-width: 500px;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(22, 27, 77, 0.888);
+            box-shadow: 2px 1px 10px 1px rgba(255, 255, 255, 0.662);
+            color: white;
+            font-size: 1.5em;
+            margin: 40px;
+            border-radius: 5px;
+        
+        }
+        thead {
+            background-color:  rgba(22, 27, 77, 0.888);
+            color: white;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(22, 27, 77, 0.888);
+            color: white;
+        }
+        td,th{
+            border: 1px  solid black;
+            padding: 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Meu relatório</h1>
+    <main>
+        <form action="cadastro.js" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required minlength="5" maxlength="40" placeholder="Qual o seu Nome?" autocomplete="name">
+                </p>
+                <p>
+                    <label for="idata">Idade:</label>
+                    <input type="date" name="data" id="idata" required>
+                <p>
+                    <label for="isex">Sexo:</label>
+                    <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label>
+                    <input type="radio" name="sexo" id="ifen" value="F"><label for="ifen">Feminino</label>
+                </p>
+        
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="number" name="Telefone" id="itelefone" required placeholder="(xx) xxxxx-xxxx" >
+                </p>
+                <p>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="Qual o seu E-mail?" autocomplete="email" >
+                </p>
+                <p>
+                    <label for="isen">Senha:</label>
+                    <input type="password" name="Senha" id="isen" required placeholder="Digite aqui sua senha" autocomplete="new-password" minlength="5" maxlength="30">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Qual seu Esporte Favorito</legend>
+                <input type="checkbox" name="fut" id="ifut" ><label for="ifut">Futebol</label>
+                <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label>
+                <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label>
+                <input type="checkbox" name="hand" id="ihand"><label for="ihan">Handebol</label>
+                <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label>
+                <input type="checkbox" name="ten" id="iten"><label for="iten">Tênis</label>
+                <input type="checkbox" name="out" id="iout"><label for="iout">Outros</label>
+             </fieldset>
+             <fieldset>
+                <legend>Jogo Favorito</legend>
+                <input type="checkbox" name="god" id="igod"><label for="igod">God Of War</label> <br>
+                <input type="checkbox" name="the" id="ithe"><label for="ithe">The Last Of Us</label> <br>
+                <input type="checkbox" name="gra" id="igran"><label for="igran">Grand Theft Auto</label> <br>
+                <input type="checkbox" name="red" id="ired"><label for="ired">Red Dead Redemption</label> <br>
+                <input type="checkbox" name="res" id="ires"><label for="ires">Residente Evil</label> <br>
+                <input type="checkbox" name="pro" id="ipro"><label for="ipro">Pro Evolution Soccer</label> <br>
+                <input type="checkbox" name="fifa" id="ififa"><label for="ififa">Fifa</label> <br>
+                <input type="checkbox" name="unch" id="iunch"><label for="iunch">Uncharted</label> <br>
+                <input type="checkbox" name="cal" id="ical"><label for="ical">Call Of Duty</label>
+             </fieldset>
+    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    </main>
+    
+    <table>
+            <caption>Filmes Favoritos</caption>
+            <thead>
+                <tr>
+                    <th>Nomes</th>
+                    <th colspan="4">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marcus</td>
+                    <td>Interestelar</td>
+                    <td>O curioso caso de banjamin Botton</td>
+                    <td>Emancipation</td>
+                    <td>Apocalípto</td>
+                <tr>
+                    <td>Thyane</td>
+                    <td>Naruto</td>
+                    <td>Avatar</td>
+                    <td>A Casa Mágica da Gaby</td>
+                    <td>Frozen</td>
+                </tr>
+                <tr>
+                    <td>Yago</td>
+                    <td>Naturo</td>
+                    <td>Avatar</td>
+                    <td>Boruto</td>
+                    <td>Alvin e os Esquilos</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>

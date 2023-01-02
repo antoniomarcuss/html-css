@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
+    <title>Projeto</title>
     <style>
-        body{
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+        }
+
+        h1{
+            padding: 15px;
+            font-size: 2.5em;
+        }
+        body,html{
+            background-image: linear-gradient( rgba(22, 27, 77, 0.888),rgb(21, 21, 43));
             font-family: Arial, Helvetica, sans-serif;
-            background-color:  rgba(22, 27, 77, 0.888);
+           
+            
         }
         h1 {
             text-align:center;
@@ -19,51 +31,76 @@
         }
         main{
             background-color: white;
-            max-width: 500px;
+            max-width: 800px;
+            min-width: 280px;
             margin: auto;
-            padding: 40px;
+            padding-top: 10vh;
+            padding-bottom: 5vh;
+            padding-left: 5vh;
+            padding-right: 5vh;
             box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.555);
             
         }
-     
-        table{
-            border-collapse: collapse;
-            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.683);
-            max-width: 500px;
-            margin: auto;
-            background-color: rgb(255, 255, 255);
-            
+        fieldset{
+            padding: 20px;
         }
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: rgba(22, 27, 77, 0.888);
-            box-shadow: 2px 1px 10px 1px rgba(255, 255, 255, 0.662);
-            color: white;
-            font-size: 1.5em;
-            margin: 40px;
-            border-radius: 5px;
+        fieldset > p{
+            padding: 5px;
+        }
+        .enviar{
+            margin-block: 20px;
+            margin-inline: 5px;
+        }
+
+        .enviar:hover{
+          background-color: rgba(78, 238, 78, 0.612);
+          -webkit-transform: scale(1.2);
+        }
+        .limpar:hover{
+          background-color: rgba(248, 45, 45, 0.612);
+          -webkit-transform: scale(1.2);
+        }
         
-        }
-        thead {
-            background-color:  rgba(22, 27, 77, 0.888);
-            color: white;
-        }
-        tbody > tr:nth-child(2n){
-            background-color: rgba(22, 27, 77, 0.888);
-            color: white;
-        }
-        td,th{
-            border: 1px  solid black;
-            padding: 10px;
+        li,a{
+            padding-top: 20px;
+            color:rgb(21, 21, 43);
+            text-decoration: none;
             
         }
+        a:hover{
+            color:darkred;
+            text-decoration: underline;
+        }
+        iframe {
+            
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.493);
+            box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.532);
+        }
+
+        footer{
+            text-align: center;
+            color:  white;
+            margin: 30px;
+        }
+        .link{
+            background-color: white;
+            padding: 3px;
+            color:rgb(21, 21, 43);
+            border-radius: 15px;
+        }
+     
 
     </style>
 </head>
 <body>
-    <h1>Meu relatório</h1>
+    <header>
+        <h1>Relatório</h1>
+    </header>
     <main>
         <form action="cadastro.js" autocomplete="on">
             <fieldset>
@@ -84,7 +121,7 @@
                 </p>
                 <p>
                     <label for="itel">Telefone:</label>
-                    <input type="number" name="Telefone" id="itelefone" required placeholder="(xx) xxxxx-xxxx" >
+                    <input type="number" name="Telefone" id="itel" required placeholder="(xx) xxxxx-xxxx" >
                 </p>
                 <p>
                     <label for="iemail">E-mail:</label>
@@ -95,19 +132,22 @@
                     <input type="password" name="Senha" id="isen" required placeholder="Digite aqui sua senha" autocomplete="new-password" minlength="5" maxlength="30">
                 </p>
             </fieldset>
-            <fieldset>
+            <fieldset style="text-align: center;">
                 <legend>Qual seu Esporte Favorito</legend>
                 <input type="checkbox" name="fut" id="ifut" ><label for="ifut">Futebol</label>
                 <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label>
-                <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label>
                 <input type="checkbox" name="hand" id="ihand"><label for="ihan">Handebol</label>
+                <input type="checkbox" name="corr" id="icor"><label for="icor">Corrida</label>
+                <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label>
                 <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label>
                 <input type="checkbox" name="ten" id="iten"><label for="iten">Tênis</label>
-                <input type="checkbox" name="out" id="iout"><label for="iout">Outros</label>
+                <input type="checkbox" name="Golf" id="igol"><label for="igol">Golf</label>
+                <input type="checkbox" name="out" 
+                id="iout"><label for="iout">Outros</label> 
              </fieldset>
              <fieldset>
-                <legend>Jogo Favorito</legend>
-                <input type="checkbox" name="god" id="igod"><label for="igod">God Of War</label> <br>
+                <legend>Quais seus Jogos Favoritos</legend>
+                <input type="checkbox" name="god" id="igod"><label for="igod">God Of War</label><br>
                 <input type="checkbox" name="the" id="ithe"><label for="ithe">The Last Of Us</label> <br>
                 <input type="checkbox" name="gra" id="igran"><label for="igran">Grand Theft Auto</label> <br>
                 <input type="checkbox" name="red" id="ired"><label for="ired">Red Dead Redemption</label> <br>
@@ -116,45 +156,26 @@
                 <input type="checkbox" name="fifa" id="ififa"><label for="ififa">Fifa</label> <br>
                 <input type="checkbox" name="unch" id="iunch"><label for="iunch">Uncharted</label> <br>
                 <input type="checkbox" name="cal" id="ical"><label for="ical">Call Of Duty</label>
+
+                
              </fieldset>
     
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar" class="enviar">
+            <input type="reset" value="Limpar" class="limpar">
         </p>
     </form>
-    </main>
     
-    <table>
-            <caption>Filmes Favoritos</caption>
-            <thead>
-                <tr>
-                    <th>Nomes</th>
-                    <th colspan="4">Filmes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Marcus</td>
-                    <td>Interestelar</td>
-                    <td>O curioso caso de banjamin Botton</td>
-                    <td>Emancipation</td>
-                    <td>Apocalípto</td>
-                <tr>
-                    <td>Thyane</td>
-                    <td>Naruto</td>
-                    <td>Avatar</td>
-                    <td>A Casa Mágica da Gaby</td>
-                    <td>Frozen</td>
-                </tr>
-                <tr>
-                    <td>Yago</td>
-                    <td>Naturo</td>
-                    <td>Avatar</td>
-                    <td>Boruto</td>
-                    <td>Alvin e os Esquilos</td>
-                </tr>
-            </tbody>
-    </table>
+    <ul>
+        <li><a href="paginas-extras/filmes.html" target="pag">Meus filmes e dos meus sobrinhos favoritos</a></li>
+        <li><a href="paginas-extras/jogos.html" target="pag">Meus jogos e dos meus sobrinho favoritos</a></li>
+    </ul>
+    
+    <iframe  name="pag" src="paginas-extras/fundo.html" frameborder="1">
+    </iframe>
+    </main>
+    <footer>
+        <p>Site Desenvolvindo por <a href="https://github.com/antoniomarcuss/" target="_blank" class="link">(Antonio Marcus)</a></p>
+    </footer>
 </body>
 </html>

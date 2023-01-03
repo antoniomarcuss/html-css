@@ -34,19 +34,30 @@
             max-width: 800px;
             min-width: 280px;
             margin: auto;
-            padding-top: 10vh;
-            padding-bottom: 5vh;
-            padding-left: 3vh;
-            padding-right: 7vh;
+            padding-top: 6vh;
+            padding-bottom: 3vh;
+            padding-left: 15px;
+            padding-right: 15px;
             box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.555);
             
         }
         fieldset{
             min-width: 100hv;
-            padding: 10px;
+            padding: 5px;
+           
         }
         fieldset > p{
-            padding: 5px;
+            padding: 3px;
+        }
+
+        fieldset.sport{
+            padding: 10px;
+            font-size: 10px;
+            margin-top: 20px;
+        }
+        fieldset.jogos{
+            padding: 10px;
+            margin-top: 20px;
         }
         .enviar{
             margin-block: 20px;
@@ -61,10 +72,13 @@
         }
         
         ul,li,a{
-            padding-left: 10px;
+            
             color:rgb(21, 21, 43);
             text-decoration: none;
             
+        }
+        ul{
+            margin-left: 20px;
         }
         a:hover{
             color: rgba 22, 27, 77, 0.888;
@@ -85,6 +99,7 @@
             text-align: center;
             color:  white;
             margin: 30px;
+            height: 100%;
         }
         .link{
             background-color: white;
@@ -102,7 +117,7 @@
     </header>
     <main>
         <form action="cadastro.js" autocomplete="on">
-            <fieldset>
+            <fieldset class="dados">
                 <legend>Dados Pessoais</legend>
                 <p>
                     <label for="inome">Nome:</label>
@@ -131,7 +146,7 @@
                     <input type="password" name="Senha" id="isen" required placeholder="Digite aqui sua senha" autocomplete="new-password" minlength="5" maxlength="30">
                 </p>
             </fieldset>
-            <fieldset style="text-align: center;">
+            <fieldset style="text-align: center;" class="sport">
                 <legend>Qual seu Esporte Favorito</legend>
                 <input type="checkbox" name="fut" id="ifut" ><label for="ifut">Futebol</label>
                 <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label>
@@ -144,7 +159,7 @@
                 <input type="checkbox" name="out" 
                 id="iout"><label for="iout">Outros</label> 
              </fieldset>
-             <fieldset>
+             <fieldset class="jogos">
                 <legend>Quais seus Jogos Favoritos</legend>
                 <input type="checkbox" name="god" id="igod"><label for="igod">God Of War</label><br>
                 <input type="checkbox" name="the" id="ithe"><label for="ithe">The Last Of Us</label> <br>

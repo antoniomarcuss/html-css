@@ -104,6 +104,7 @@
         .link{
             background-color: white;
             padding: 3px;
+            margin: 10px;
             color:rgb(21, 21, 43);
             border-radius: 15px;
         }
@@ -117,7 +118,7 @@
     </header>
     <main>
         <form action="cadastro.js" autocomplete="on">
-            <fieldset class="dados">
+            <fieldset>
                 <legend>Dados Pessoais</legend>
                 <p>
                     <label for="inome">Nome:</label>
@@ -133,9 +134,9 @@
                 </p>
         
                 </p>
-                <p>
+                <p class=>
                     <label for="itel">Telefone:</label>
-                    <input type="number" name="Telefone" id="itel" required placeholder="(xx) xxxxx-xxxx" >
+                    <input type="number" name="Telefone" id="itel" required placeholder="(xx) xxxxx-xxxx" style="width: 180px;">
                 </p>
                 <p>
                     <label for="iemail">E-mail:</label>

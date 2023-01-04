@@ -94,6 +94,11 @@
                     <input type="password" name="Senha" id="isen" required placeholder="Digite aqui sua senha" autocomplete="new-password" minlength="5" maxlength="30">
                 </p>
             </fieldset>
+            
+            <fieldset >
+                <legend>Escolha uma foto de perfil</legend>
+                <label for="ifoto"></label><input type="file" name="" id="" required>
+            </fieldset>
 
             <fieldset class="lingua">
                 <legend>Qual sua linguagem de programação preferida </legend>
@@ -105,6 +110,7 @@
                 <input type="checkbox" name="javascript" id="iscri"><label for="iscri">JavaScript</label> <br>
                 <input type="checkbox" name="swift" id="isui"><label for="isui">Swift</label> <br>
                 <input type="checkbox" name="ruby" id="iru"><label for="iru">Ruby</label> <br>
+                <input type="checkbox" name="outro" id="ioutro"><label for="ioutro">Outros</label>
             </fieldset>
 
 
@@ -122,6 +128,12 @@
                 <input type="checkbox" name="out" 
                 id="iout"><label for="iout">Outros</label> 
              </fieldset>
+
+                <fieldset>
+                    <legend>Qual sua cor preferida</legend>
+                <label for="icor"></label>Escolha: <input type="color" name="cor" id="icor" value="#0000ff">
+                </fieldset>
+            
              <fieldset class="jogos">
                 <legend>Quais seus Jogos Favoritos</legend>
                 <input type="checkbox" name="god" id="igod"><label for="igod">God Of War</label><br>
@@ -146,10 +158,15 @@
                 <input type="checkbox" name="fri" id="ifri"><label for="ifri">Free Fire</label> <br>
                 <input type="checkbox" name="far" id="ifar"><label for="ifar">Far Cry</label> <br>
                 
-                
             </fieldset>
-
-            
+             <fieldset class="sas">
+                <legend>Nivel de satisfação com o relatório</legend>
+                 <label for="isas">0 </label><input type="range" name="satisfação" id="isas" min="0" max="10" style="width: 300px;"> 10
+             </fieldset>
+            <fieldset>
+                <legend>diga-nos em que podemos melhorar</legend>
+                <label for="imsg"></label><textarea name="msg" id="imsg" cols="30" rows="10">Digite aqui:</textarea>
+            </fieldset>
     
         <p>
             <input type="submit" value="Enviar" class="enviar">

@@ -10,9 +10,10 @@
 h1{
     padding: 15px;
     font-size: 2.5em;
+    color: #0000ff;
 }
 body,html{
-    background-image: linear-gradient( rgba(22, 27, 77, 0.888),rgb(21, 21, 43));
+    background-image: linear-gradient( #161b4de2,rgb(21, 21, 43));
     font-family: Arial, Helvetica, sans-serif;
    
     
@@ -37,6 +38,7 @@ main{
     
 }
 fieldset{
+    margin-top: 10px;
     min-width: 100hv;
     padding: 10px;
    
@@ -52,10 +54,12 @@ fieldset.lingua{
 }
 
 fieldset.sport{
-    padding: 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 40px;
+    
+   
+    font-size: 36px;
+
+}
+.cor{
     margin-top: 20px;
 }
 

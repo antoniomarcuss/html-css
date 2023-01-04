@@ -49,16 +49,26 @@
         fieldset > p {
             padding: 8px;
         }
+
+        fieldset.lingua{
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
         
         fieldset.sport{
             padding: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
             font-size: 40px;
             margin-top: 20px;
         }
+
         fieldset.jogos{
             padding: 10px;
-            font-size: 25px;
+            font-size: 20px;
             margin-top: 20px;
+            
         }
 
         .enviar{
@@ -203,6 +213,21 @@
                     <input type="password" name="Senha" id="isen" required placeholder="Digite aqui sua senha" autocomplete="new-password" minlength="5" maxlength="30">
                 </p>
             </fieldset>
+
+            <fieldset class="lingua">
+                <legend>Qual sua linguagem de programação preferida </legend>
+                <input type="checkbox" name="python" id="ipy"><label for="ipy">Python</label> <br>
+                <input type="checkbox" name="php" id="iphp"><label for="iphp">PHP</label> <br>
+                <input type="checkbox" name="c#" id="ic#"><label for="ic#">C#</label> <br>
+                <input type="checkbox" name="c++" id="ic+"><label for="ic+">C++</label> <br>
+                <input type="checkbox" name="java" id="ijava"><label for="ijava">Java</label> <br>
+                <input type="checkbox" name="javascript" id="iscri"><label for="iscri">JavaScript</label> <br>
+                <input type="checkbox" name="swift" id="isui"><label for="isui">Swift</label> <br>
+                <input type="checkbox" name="ruby" id="iru"><label for="iru">Ruby</label> <br>
+            </fieldset>
+
+
+
             <fieldset style="text-align: center;" class="sport">
                 <legend>Qual seu Esporte Favorito</legend>
                 <input type="checkbox" name="fut" id="ifut" ><label for="ifut">Futebol</label>

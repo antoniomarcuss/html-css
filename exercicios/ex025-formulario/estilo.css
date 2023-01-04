@@ -28,7 +28,8 @@ h1 {
 main{
     background-color: white;
     max-width: 800px;
-    min-width: 250px;
+    min-width: 340px;
+    
     margin: auto;
     padding-top: 6vh;
     padding-bottom: 3vh;
@@ -54,11 +55,10 @@ fieldset.lingua{
 }
 
 fieldset.sport{
-    
-   
-    font-size: 36px;
+     font-size: 18px;
 
 }
+
 .cor{
     margin-top: 20px;
 }
@@ -115,6 +115,10 @@ footer{
     margin: 30px;
     max-height: 100vw;
 }
+footer > p , a{
+    font-size: 15px;
+}
+
 .link{
     background-color: white;
     padding: 3px;

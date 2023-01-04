@@ -95,9 +95,9 @@
                 </p>
             </fieldset>
             
-            <fieldset >
+            <fieldset style="min-width: 320px;">
                 <legend>Escolha uma foto de perfil</legend>
-                <label for="ifoto"></label><input type="file" name="" id="" required>
+                <label for="ifoto"></label><input type="file" name="foto" id="ifoto" required>
             </fieldset>
 
             <fieldset class="lingua">
@@ -161,7 +161,9 @@
             </fieldset>
              <fieldset class="sas">
                 <legend>Nivel de satisfação com o relatório</legend>
-                 <label for="isas">0 </label><input type="range" name="satisfação" id="isas" min="0" max="10" style="width: 300px;"> 10
+                 <label for="isas"></label>
+                 <input type="range" name="satisfação" id="isas" min="0" max="10" style="width: 200px;" oninput="ival.innerHTML= Number(isas.value)">
+                 <output id="ival">5</output>
              </fieldset>
             <fieldset>
                 <legend>diga-nos em que podemos melhorar</legend>

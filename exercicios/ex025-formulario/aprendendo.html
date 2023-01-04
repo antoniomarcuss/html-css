@@ -46,13 +46,10 @@
             padding: 10px;
            
         }
-        fieldset > p{
+        fieldset > p {
             padding: 8px;
         }
-        p .sex{
-            margin-top: 15px;
-            
-        }
+        
         fieldset.sport{
             padding: 10px;
             font-size: 40px;
@@ -89,7 +86,7 @@
         }
         a:hover{
             color: rgba 22, 27, 77, 0.888;
-            text-decoration: underline;
+            text-decoration:underline;
         }
         iframe {
             
@@ -104,9 +101,9 @@
 
         footer{
             text-align: center;
-            color:  white;
+            color: white;
             margin: 30px;
-            height: 100%;
+            max-height: 100vw;
         }
         .link{
             background-color: white;
@@ -129,8 +126,9 @@
                 <legend>Dados Pessoais</legend>
                 <p>
                     <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome" required minlength="5" maxlength="40" placeholder="Qual o seu Nome?" autocomplete="name">
+                    <input type="text" name="nome" id="inome" required minlength="5" maxlength="40" placeholder="Nome e Sobrenome" autocomplete="name">
                 </p>
+
                 <p>
                     <label for="idata">Idade:</label>
                     <input type="date" name="data" id="idata" required>
@@ -139,7 +137,58 @@
                     <input type="radio" name="sexo" id="imas" value="M" class="sex"><label for="imas">Masculino</label>
                     <input type="radio" name="sexo" id="ifen" value="F"><label for="ifen">Feminino</label>
                 </p>
-        
+                <p>
+                    <label for="iest">Estado</label>
+                    <select name="estado" id="iest" required>
+                        <option value="">Selecione seu estado</option>
+                        <optgroup label="Estados do Brasil">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="Go">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="ilist" placeholder="Area da Tecnologia" required>
+                    <datalist id="ilist">
+                        <option>Analista de Sistemas</option>
+                        <option>Analista de Dados</option>
+                        <option>Arquiteto de Redes</option>
+                        <option>Cientista de Dados</option>
+                        <option>Desenvolvedor Mobile</option>
+                        <option>Desenvolvedor Robótica</option>
+                        <option>Desenvolvedor de Jogos</option>
+                        <option>Engenheiro de Software</option>
+                        <option>Programador Web</option>
+                        <option>Segurança da Informação</option>
+
+                    </datalist>
                 </p>
                 <p>
                     <label for="itel">Telefone:</label>
